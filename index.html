@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Documentation & Policies — RouteDefense Group</title>
+    <meta name="description" content="Official Legal Documentation, Privacy Policy, and Terms of Service for RouteDefense Group.">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --obsidian: #111111;
+            --accent: #E63946;
+            --bg-color: #FAFAFA;
+            --text-main: #1A1A1A;
+            --text-muted: #666666;
+            --border-color: #E5E5E5;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--obsidian);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            text-decoration: none;
+        }
+
+        .header-brand img {
+            height: 32px;
+            width: 32px;
+            filter: brightness(0) invert(1);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .brand-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+
+        .brand-sub {
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 3px;
+        }
+
+        .return-link {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .return-link:hover {
+            background-color: #FFFFFF;
+            color: var(--obsidian);
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 1.5rem;
+        }
+
+        .docs-container {
+            background: var(--card-bg);
+            max-width: 760px;
+            width: 100%;
+            border: 1px solid var(--border-color);
+            padding: 3.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(230, 57, 70, 0.08);
+            color: var(--accent);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.35rem 0.75rem;
+            margin-bottom: 1.5rem;
+            border-left: 2px solid var(--accent);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--obsidian);
+            font-size: 2.25rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .doc-list {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .doc-link-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .doc-link-item:hover {
+            padding-left: 0.5rem;
+        }
+
+        .doc-link-item:hover .doc-title {
+            color: var(--accent);
+        }
+
+        .doc-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--obsidian);
+            margin-bottom: 0.25rem;
+            transition: color 0.2s ease;
+        }
+
+        .doc-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .arrow-icon {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .doc-link-item:hover .arrow-icon {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        footer {
+            background-color: var(--obsidian);
+            color: rgba(255, 255, 255, 0.4);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 640px) {
+            .docs-container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://routedefensegroup.com" class="header-brand">
+            <img src="/logo.svg" alt="RouteDefense Logo">
+            <div class="brand-text">
+                <span class="brand-name">ROUTEDEFENSE GROUP</span>
+                <span class="brand-sub">Documentation Portal</span>
+            </div>
+        </a>
+        <a href="https://routedefensegroup.com" class="return-link">Main Network &rarr;</a>
+    </header>
+
+    <main>
+        <div class="docs-container">
+            <div class="badge-tag">Institutional Legal Repository</div>
+            <h1>Compliance & Documentation</h1>
+            <p class="subtitle">Official legal guidelines, data privacy practices, and client service disclosures for RouteDefense Group.</p>
+
+            <div class="doc-list">
+                <a href="/privacy/" class="doc-link-item">
+                    <div>
+                        <div class="doc-title">Privacy Policy</div>
+                        <div class="doc-desc">Data collection standards, 256-bit encryption, citation routing protocols, and information confidentiality.</div>
+                    </div>
+                    <div class="arrow-icon">&rarr;</div>
+                </a>
+
+                <a href="/terms/" class="doc-link-item">
+                    <div>
+                        <div class="doc-title">Terms of Service</div>
+                        <div class="doc-desc">Platform terms of engagement, legal network structure, attorney routing provisions, and user responsibilities.</div>
+                    </div>
+                    <div class="arrow-icon">&rarr;</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 RouteDefense Group. All rights reserved. Secure Legal Repository.
+    </footer>
+
+</body>
+</html>

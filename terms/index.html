@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — RouteDefense Group</title>
+    <meta name="description" content="Official Terms of Service for RouteDefense Group. Understand the terms governing case evaluations, attorney routing, and platform engagement.">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --obsidian: #111111;
+            --accent: #E63946;
+            --bg-color: #FAFAFA;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--obsidian);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            text-decoration: none;
+        }
+
+        .header-brand img {
+            height: 32px;
+            width: 32px;
+            filter: brightness(0) invert(1);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .brand-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+
+        .brand-sub {
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFFFFF;
+        }
+
+        .doc-banner {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid var(--border-color);
+            padding: 3.5rem 2rem 2.5rem 2rem;
+        }
+
+        .doc-banner-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(230, 57, 70, 0.08);
+            color: var(--accent);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            padding: 0.35rem 0.75rem;
+            border-left: 2px solid var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--obsidian);
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .doc-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3.5rem;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .doc-sidebar {
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--obsidian);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+            line-height: 1.4;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .doc-content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .doc-content section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 7rem;
+        }
+
+        .doc-content h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--obsidian);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .doc-content p {
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .doc-content ul {
+            margin: 0 0 1.5rem 1.5rem;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .doc-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .callout-box {
+            background-color: rgba(230, 57, 70, 0.04);
+            border-left: 3px solid var(--accent);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+
+        footer {
+            background-color: var(--obsidian);
+            color: rgba(255, 255, 255, 0.4);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 900px) {
+            .doc-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1.5rem;
+            }
+            .doc-sidebar {
+                display: none;
+            }
+            .doc-content {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://routedefensegroup.com" class="header-brand">
+            <img src="/logo.svg" alt="RouteDefense Logo">
+            <div class="brand-text">
+                <span class="brand-name">ROUTEDEFENSE GROUP</span>
+                <span class="brand-sub">Legal Repository</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="/">Docs Hub</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="https://routedefensegroup.com">Back to Website &rarr;</a>
+        </div>
+    </header>
+
+    <div class="doc-banner">
+        <div class="doc-banner-inner">
+            <div class="badge-tag">Official Governance Document · RD-TOS-2026</div>
+            <h1>Terms of Service & Network Agreement</h1>
+            <div class="doc-meta">
+                <div><strong>Effective Date:</strong> October 27, 2026</div>
+                <div><strong>Entity:</strong> RouteDefense Group LLC</div>
+                <div><strong>Governing Law:</strong> United States / Federal & State Law</div>
+                <div><strong>Standard:</strong> American Bar Association Compliance</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="doc-layout">
+        <aside class="doc-sidebar">
+            <div class="toc-title">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#nature-of-network">2. Structure of Legal Network</a></li>
+                <li><a href="#attorney-relationship">3. Attorney-Client Formation</a></li>
+                <li><a href="#no-guarantee">4. No Outcome Guarantee</a></li>
+                <li><a href="#driver-responsibilities">5. Driver Responsibilities</a></li>
+                <li><a href="#fees-retainers">6. Fees & Retainers</a></li>
+                <li><a href="#liability">7. Limitation of Liability</a></li>
+                <li><a href="#disputes">8. Dispute Resolution</a></li>
+                <li><a href="#notices">9. Legal Notices</a></li>
+            </ul>
+        </aside>
+
+        <main class="doc-content">
+            <section id="acceptance">
+                <h2>1. Acceptance of Terms</h2>
+                <p>Welcome to RouteDefense Group LLC ("RouteDefense", "we", "us", or "our"). By accessing or utilizing our website located at <code>routedefensegroup.com</code>, <code>docs.routedefensegroup.com</code>, submitting case intake forms, or uploading traffic citation documentation, you agree to be legally bound by these Terms of Service.</p>
+                <p>If you do not accept these terms in their entirety, you must not access or submit documentation through our network platform.</p>
+            </section>
+
+            <section id="nature-of-network">
+                <h2>2. Structure & Nature of Legal Network</h2>
+                <div class="callout-box">
+                    <strong>ATTORNEY ADVERTISING & ROUTING NOTICE:</strong> RouteDefense Group operates as a legal technology platform and lawyer network that facilitates initial intake, jurisdictional analysis, and case transmission between motorists and independent licensed defense attorneys. RouteDefense itself is not a law firm and does not provide legal representation directly.
+                </div>
+                <p>Independent attorneys participating in the RouteDefense Network are vetted, maintain active licensing in their respective state jurisdictions, and adhere to applicable state ethics and professional responsibility rules.</p>
+            </section>
+
+            <section id="attorney-client">
+                <h2>3. Attorney-Client Relationship Formation</h2>
+                <p>Transmitting your citation details, narrative, or uploaded ticket documentation through our website does NOT automatically establish an attorney-client relationship. An attorney-client relationship is formally established ONLY when:</p>
+                <ul>
+                    <li>The assigned defense attorney conducts an ethical conflict check and confirms availability in your county court venue.</li>
+                    <li>Both you and the assigned attorney execute a formal engagement agreement detailing scope of representation.</li>
+                    <li>Agreed legal fees or retainers are settled in accordance with applicable state trust account (IOLTA) standards.</li>
+                </ul>
+            </section>
+
+            <section id="no-guarantee">
+                <h2>4. No Outcome Guarantee Disclaimer</h2>
+                <p>Judicial determinations, dismissals, charge reductions, and fine waivers are within the sole constitutional discretion of the presiding municipal, county, or district judge and prosecuting agency.</p>
+                <div class="callout-box">
+                    <strong>PRIOR RESULTS DO NOT GUARANTEE A SIMILAR OUTCOME.</strong> Statements regarding historical case resolution rates (such as dismissal rates or DMV point protection) reflect past performance across our network and do not constitute a promise or warranty of success in your specific legal matter.
+                </div>
+            </section>
+
+            <section id="driver-responsibilities">
+                <h2>5. Driver Responsibilities & Court Deadlines</h2>
+                <p>Until formal retention of defense counsel is confirmed in writing, you remain solely responsible for monitoring and complying with all court appearance deadlines, payment due dates, and summons orders indicated on your traffic citation.</p>
+                <p>You agree to provide accurate, truthful, and complete information, including legible copies of any issued tickets or notices.</p>
+            </section>
+
+            <section id="fees-retainers">
+                <h2>6. Fees, Retainers & Refunds</h2>
+                <p>Initial preliminary case evaluations submitted through RouteDefense are provided at zero upfront cost ($0). If you elect to retain matched legal counsel, all legal representation fees, flat-rate defense retainers, or court costs are clearly disclosed prior to retention.</p>
+            </section>
+
+            <section id="liability">
+                <h2>7. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, RouteDefense Group LLC, its affiliates, officers, directors, and technology providers shall not be liable for any indirect, punitive, consequential, or exemplary damages arising from website unavailability, clerical input errors by users, or decisions rendered by courts or law enforcement agencies.</p>
+            </section>
+
+            <section id="disputes">
+                <h2>8. Governing Law & Dispute Resolution</h2>
+                <p>These Terms of Service are governed by and construed under the laws of the United States. Any disputes arising from or relating to your use of the website platform shall be resolved through confidential binding arbitration or appropriate judicial venues.</p>
+            </section>
+
+            <section id="notices">
+                <h2>9. Legal Inquiries & Contact</h2>
+                <p>Official legal notices or inquiries regarding these Terms may be directed to:</p>
+                <p>
+                    <strong>RouteDefense Group LLC — Legal Compliance</strong><br>
+                    Email: <a href="mailto:legal@routedefensegroup.com" style="color: var(--accent);">legal@routedefensegroup.com</a><br>
+                    Toll-Free Hotline: (800) 555-0199<br>
+                    Website: <a href="https://routedefensegroup.com" style="color: var(--obsidian);">routedefensegroup.com</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2026 RouteDefense Group LLC. All rights reserved. Secure Legal Repository.
+    </footer>
+
+</body>
+</html>

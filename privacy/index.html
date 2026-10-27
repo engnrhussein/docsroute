@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — RouteDefense Group</title>
+    <meta name="description" content="Official Privacy Policy of RouteDefense Group. How we collect, encrypt, and route citation information to verified defense counsel across US jurisdictions.">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --obsidian: #111111;
+            --accent: #E63946;
+            --bg-color: #FAFAFA;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--obsidian);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            text-decoration: none;
+        }
+
+        .header-brand img {
+            height: 32px;
+            width: 32px;
+            filter: brightness(0) invert(1);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .brand-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+
+        .brand-sub {
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFFFFF;
+        }
+
+        .doc-banner {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid var(--border-color);
+            padding: 3.5rem 2rem 2.5rem 2rem;
+        }
+
+        .doc-banner-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(230, 57, 70, 0.08);
+            color: var(--accent);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            padding: 0.35rem 0.75rem;
+            border-left: 2px solid var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--obsidian);
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .doc-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3.5rem;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .doc-sidebar {
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--obsidian);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+            line-height: 1.4;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .doc-content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .doc-content section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 7rem;
+        }
+
+        .doc-content h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--obsidian);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .doc-content h3 {
+            color: var(--obsidian);
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .doc-content p {
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .doc-content ul {
+            margin: 0 0 1.5rem 1.5rem;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .doc-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .callout-box {
+            background-color: rgba(230, 57, 70, 0.04);
+            border-left: 3px solid var(--accent);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+
+        footer {
+            background-color: var(--obsidian);
+            color: rgba(255, 255, 255, 0.4);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 900px) {
+            .doc-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1.5rem;
+            }
+            .doc-sidebar {
+                display: none;
+            }
+            .doc-content {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://routedefensegroup.com" class="header-brand">
+            <img src="/logo.svg" alt="RouteDefense Logo">
+            <div class="brand-text">
+                <span class="brand-name">ROUTEDEFENSE GROUP</span>
+                <span class="brand-sub">Legal Repository</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="/">Docs Hub</a>
+            <a href="/terms/">Terms of Service</a>
+            <a href="https://routedefensegroup.com">Back to Website &rarr;</a>
+        </div>
+    </header>
+
+    <div class="doc-banner">
+        <div class="doc-banner-inner">
+            <div class="badge-tag">Official Compliance Document · RD-PRV-2026</div>
+            <h1>Privacy Policy & Data Security</h1>
+            <div class="doc-meta">
+                <div><strong>Effective Date:</strong> October 27, 2026</div>
+                <div><strong>Entity:</strong> RouteDefense Group LLC</div>
+                <div><strong>Jurisdiction:</strong> United States (All 50 States)</div>
+                <div><strong>Encryption:</strong> 256-Bit SSL / TLS 1.3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="doc-layout">
+        <aside class="doc-sidebar">
+            <div class="toc-title">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#overview">1. Overview & Scope</a></li>
+                <li><a href="#information-collected">2. Information We Collect</a></li>
+                <li><a href="#document-upload">3. Citation Document Uploads</a></li>
+                <li><a href="#how-we-use">4. How Data Is Routed & Used</a></li>
+                <li><a href="#security">5. 256-Bit Encryption Standards</a></li>
+                <li><a href="#disclosure">6. Non-Disclosure & Third Parties</a></li>
+                <li><a href="#attorney-client">7. Attorney-Client Privilege</a></li>
+                <li><a href="#retention">8. Data Retention & Deletion</a></li>
+                <li><a href="#contact">9. Compliance Contact</a></li>
+            </ul>
+        </aside>
+
+        <main class="doc-content">
+            <section id="overview">
+                <h2>1. Overview & Institutional Scope</h2>
+                <p>RouteDefense Group LLC ("RouteDefense", "we", "our", or "the Network") operates as a legal access and routing platform connecting motorists facing traffic citations, misdemeanors, and license points with vetted, licensed traffic defense attorneys across all 50 US states and 3,143 municipal county jurisdictions.</p>
+                <p>This Privacy Policy governs the collection, encryption, transmission, and retention of personal data and legal citation records submitted via our websites (including <code>routedefensegroup.com</code>, <code>docs.routedefensegroup.com</code>, and affiliated portals).</p>
+            </section>
+
+            <section id="information-collected">
+                <h2>2. Information We Collect</h2>
+                <p>When you request a case evaluation or utilize our automated case intake portal, we collect the following categories of information:</p>
+                <ul>
+                    <li><strong>Contact Credentials:</strong> Full legal name, telephone number, email address, and home jurisdiction.</li>
+                    <li><strong>Citation & Violation Data:</strong> Citation number, issuing law enforcement agency, date and time of infraction, alleged statutory violation (e.g., speeding speed differential, CDL safety infraction, reckless driving), and court appearance deadlines.</li>
+                    <li><strong>Jurisdictional Venue:</strong> The issuing State, County, and municipal court assigned to your file.</li>
+                    <li><strong>Factual Narrative:</strong> Any voluntary context, road conditions, radar calibration notes, or prior driving record history you disclose in the case details field.</li>
+                </ul>
+            </section>
+
+            <section id="document-upload">
+                <h2>3. Citation Document & Photographic Uploads</h2>
+                <p>Our secure intake portal permits drivers to upload photographic or PDF copies of their traffic citations, court summons, or driving records (up to 10MB per transmission).</p>
+                <div class="callout-box">
+                    <strong>Critical Security Protocol:</strong> Uploaded document files are transmitted over TLS 1.3 encrypted sockets directly into quarantined, access-restricted cloud storage. They are decrypted solely for the verified defense attorney assigned to conduct your preliminary legal evaluation.
+                </div>
+            </section>
+
+            <section id="how-we-use">
+                <h2>4. How Data Is Routed & Used</h2>
+                <p>RouteDefense uses your submitted information strictly for legal case evaluation and attorney assignment:</p>
+                <ul>
+                    <li>To verify jurisdictional venue and match your matter with a licensed attorney in the specific county of issue.</li>
+                    <li>To compute potential DMV point penalties, license suspension risks, and commercial driving (CDL) CSA score impacts.</li>
+                    <li>To deliver case confirmation notices and evaluation updates via secure email or telephone.</li>
+                    <li>To comply with statutory legal reporting requirements and judicial auditing rules.</li>
+                </ul>
+            </section>
+
+            <section id="security">
+                <h2>5. 256-Bit Encryption Standards</h2>
+                <p>We implement institutional-grade technical, administrative, and physical safeguards:</p>
+                <ul>
+                    <li><strong>Transport Layer Security:</strong> All web traffic and form submissions are secured with 256-bit SSL / TLS 1.3 encryption.</li>
+                    <li><strong>Restricted Attorney Access:</strong> Only defense counsel vetted and active within our network who maintain good standing with their respective State Bar Association are granted access to case intake files.</li>
+                    <li><strong>No Plaintext Storage:</strong> Sensitive driver records and citation documents are encrypted at rest using AES-256 standards.</li>
+                </ul>
+            </section>
+
+            <section id="disclosure">
+                <h2>6. Non-Disclosure & Strict Non-Sale of Data</h2>
+                <p>RouteDefense maintains an unconditional policy regarding personal data:</p>
+                <div class="callout-box">
+                    <strong>WE DO NOT SELL, RENT, OR MONETIZE YOUR PERSONAL INFORMATION.</strong> We never distribute driver information to insurance carriers, marketing brokers, commercial data aggregators, or automated background databases.
+                </div>
+                <p>Information is disclosed solely to: (i) the assigned defense attorney and their authorized legal staff, (ii) municipal or county courts solely upon formal retention and filing of entry of appearance, and (iii) technical service providers operating under strict confidentiality covenants.</p>
+            </section>
+
+            <section id="attorney-client">
+                <h2>7. Attorney-Client Privilege & Work-Product Notice</h2>
+                <p>Initial submission of citation data through RouteDefense initiates a confidential inquiry. While formal attorney-client representation commences only upon execution of an engagement agreement and retainer with the assigned attorney, all preliminary communications and uploaded documents submitted for the purpose of seeking legal representation are treated as strictly confidential to the maximum extent permitted by law and State Bar ethical rules.</p>
+            </section>
+
+            <section id="retention">
+                <h2>8. Data Retention & Erasure Requests</h2>
+                <p>Citation records that do not proceed to formal legal retention are permanently archived or deleted in accordance with legal document retention schedules. You retain the right to request verification, correction, or deletion of your personal case information at any time by contacting our compliance office.</p>
+            </section>
+
+            <section id="contact">
+                <h2>9. Compliance Contact</h2>
+                <p>If you have inquiries regarding this Privacy Policy or wish to exercise your data rights, contact:</p>
+                <p>
+                    <strong>RouteDefense Group LLC — Privacy & Legal Affairs</strong><br>
+                    Email: <a href="mailto:compliance@routedefensegroup.com" style="color: var(--accent);">compliance@routedefensegroup.com</a><br>
+                    Intake Hotline: (800) 555-0199<br>
+                    Official Portal: <a href="https://routedefensegroup.com" style="color: var(--obsidian);">routedefensegroup.com</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2026 RouteDefense Group LLC. All rights reserved. Secure Legal Repository.
+    </footer>
+
+</body>
+</html>
