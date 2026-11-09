@@ -1,261 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Documentation & Policies — RouteDefense Group</title>
-    <meta name="description" content="Official Legal Documentation, Privacy Policy, and Terms of Service for RouteDefense Group.">
-    <link rel="icon" type="image/svg+xml" href="/logo.svg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
-        
-        :root {
-            --obsidian: #111111;
-            --accent: #E63946;
-            --bg-color: #FAFAFA;
-            --text-main: #1A1A1A;
-            --text-muted: #666666;
-            --border-color: #E5E5E5;
-            --card-bg: #FFFFFF;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--obsidian);
-            padding: 1.25rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 3px solid var(--accent);
-        }
-
-        .header-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.85rem;
-            text-decoration: none;
-        }
-
-        .header-brand img {
-            height: 32px;
-            width: 32px;
-            filter: brightness(0) invert(1);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1;
-        }
-
-        .brand-name {
-            font-size: 1.1rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            color: #FFFFFF;
-        }
-
-        .brand-sub {
-            font-size: 0.55rem;
-            font-weight: 700;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-top: 3px;
-        }
-
-        .return-link {
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.2s ease;
-        }
-
-        .return-link:hover {
-            background-color: #FFFFFF;
-            color: var(--obsidian);
-        }
-
-        main {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 4rem 1.5rem;
-        }
-
-        .docs-container {
-            background: var(--card-bg);
-            max-width: 760px;
-            width: 100%;
-            border: 1px solid var(--border-color);
-            padding: 3.5rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-        }
-
-        .badge-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: rgba(230, 57, 70, 0.08);
-            color: var(--accent);
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            padding: 0.35rem 0.75rem;
-            margin-bottom: 1.5rem;
-            border-left: 2px solid var(--accent);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            color: var(--obsidian);
-            font-size: 2.25rem;
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        p.subtitle {
-            color: var(--text-muted);
-            margin-bottom: 2.5rem;
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .doc-list {
-            display: flex;
-            flex-direction: column;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .doc-link-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.2s ease;
-        }
-
-        .doc-link-item:hover {
-            padding-left: 0.5rem;
-        }
-
-        .doc-link-item:hover .doc-title {
-            color: var(--accent);
-        }
-
-        .doc-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--obsidian);
-            margin-bottom: 0.25rem;
-            transition: color 0.2s ease;
-        }
-
-        .doc-desc {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .arrow-icon {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            transition: transform 0.2s ease, color 0.2s ease;
-        }
-
-        .doc-link-item:hover .arrow-icon {
-            transform: translateX(4px);
-            color: var(--accent);
-        }
-
-        footer {
-            background-color: var(--obsidian);
-            color: rgba(255, 255, 255, 0.4);
-            padding: 2rem;
-            text-align: center;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        @media (max-width: 640px) {
-            .docs-container {
-                padding: 2rem 1.5rem;
-            }
-            h1 {
-                font-size: 1.75rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Hub — RouteDefense Group</title>
+  <meta name="description" content="Official Legal Documentation, Privacy Policy, and Terms of Service for RouteDefense Group.">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
-    <header>
-        <a href="https://routedefensegroup.com" class="header-brand">
-            <img src="/logo.svg" alt="RouteDefense Logo">
-            <div class="brand-text">
-                <span class="brand-name">ROUTEDEFENSE GROUP</span>
-                <span class="brand-sub">Documentation Portal</span>
-            </div>
-        </a>
-        <a href="https://routedefensegroup.com" class="return-link">Main Network &rarr;</a>
-    </header>
+  <div class="app-wrapper">
 
-    <main>
-        <div class="docs-container">
-            <div class="badge-tag">Institutional Legal Repository</div>
-            <h1>Compliance & Documentation</h1>
-            <p class="subtitle">Official legal guidelines, data privacy practices, and client service disclosures for RouteDefense Group.</p>
-
-            <div class="doc-list">
-                <a href="/privacy/" class="doc-link-item">
-                    <div>
-                        <div class="doc-title">Privacy Policy</div>
-                        <div class="doc-desc">Data collection standards, 256-bit encryption, citation routing protocols, and information confidentiality.</div>
-                    </div>
-                    <div class="arrow-icon">&rarr;</div>
-                </a>
-
-                <a href="/terms/" class="doc-link-item">
-                    <div>
-                        <div class="doc-title">Terms of Service</div>
-                        <div class="doc-desc">Platform terms of engagement, legal network structure, attorney routing provisions, and user responsibilities.</div>
-                    </div>
-                    <div class="arrow-icon">&rarr;</div>
-                </a>
-            </div>
+    <!-- Desktop Sidebar (Raz Docs Style) -->
+    <aside class="desktop-sidebar">
+      <a href="/" class="sidebar-header">
+        <img src="/logo.svg" alt="RouteDefense Logo" class="sidebar-logo">
+        <div class="sidebar-brand-text">
+          <span class="sidebar-brand-name">ROUTEDEFENSE</span>
+          <span class="sidebar-brand-sub">DOCS PORTAL</span>
         </div>
-    </main>
+      </a>
 
-    <footer>
-        &copy; 2026 RouteDefense Group. All rights reserved. Secure Legal Repository.
-    </footer>
+      <nav class="sidebar-nav">
+        <a href="/" class="nav-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          Overview
+        </a>
+
+        <div class="nav-section-title">Legal &amp; Compliance</div>
+
+        <a href="/privacy/" class="nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.89 0 4.78 1 6.94 1.89A1 1 0 0 1 20 6z"/></svg>
+          Privacy Policy
+        </a>
+
+        <a href="/terms/" class="nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Terms of Service
+        </a>
+
+        <div class="nav-section-title">Network</div>
+
+        <a href="https://routedefensegroup.com" class="nav-item" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Main Website &rarr;
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        &copy; 2026 RouteDefense Group LLC.<br>Institutional Legal Repository.
+      </div>
+    </aside>
+
+    <!-- Main Viewport Area -->
+    <div class="main-viewport">
+
+      <!-- Mobile Header -->
+      <header class="mobile-header">
+        <a href="/" class="mobile-brand">
+          <img src="/logo.svg" alt="RouteDefense">
+          <span class="mobile-brand-title">RouteDefense <span>Docs</span></span>
+        </a>
+        <div class="mobile-nav-pills">
+          <a href="/privacy/" class="mobile-pill">Privacy</a>
+          <a href="/terms/" class="mobile-pill">Terms</a>
+          <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mobile Drawer Dropdown -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-content">
+          <a href="/" class="nav-item active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            Overview
+          </a>
+          <a href="/privacy/" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.89 0 4.78 1 6.94 1.89A1 1 0 0 1 20 6z"/></svg>
+            Privacy Policy
+          </a>
+          <a href="/terms/" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Terms of Service
+          </a>
+          <a href="https://routedefensegroup.com" class="nav-item" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Main Website &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Content Canvas -->
+      <main class="content-canvas">
+        <div class="hub-header">
+          <div class="badge-tag">Institutional Legal Repository</div>
+          <h1 class="hub-title">Documentation Hub</h1>
+          <p class="hub-subtitle">
+            Welcome to the official legal documentation and compliance portal for RouteDefense Group. Review our public compliance policies, data privacy protocols, and network terms of engagement.
+          </p>
+        </div>
+
+        <div class="doc-hub-grid">
+
+          <!-- Card 1: Privacy Policy -->
+          <a href="/privacy/" class="hub-card">
+            <div class="hub-card-header">
+              <div class="hub-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.89 0 4.78 1 6.94 1.89A1 1 0 0 1 20 6z"/></svg>
+              </div>
+              <span class="hub-card-arrow">&rarr;</span>
+            </div>
+            <h2 class="hub-card-title">Privacy Policy</h2>
+            <p class="hub-card-desc">
+              Data collection standards, 256-bit encryption, citation document uploads, and strict non-disclosure policies across US jurisdictions.
+            </p>
+            <div class="hub-card-footer">
+              <span>RD-PRV-2026</span>
+              <span>9 Sections &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 2: Terms of Service -->
+          <a href="/terms/" class="hub-card">
+            <div class="hub-card-header">
+              <div class="hub-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <span class="hub-card-arrow">&rarr;</span>
+            </div>
+            <h2 class="hub-card-title">Terms of Service</h2>
+            <p class="hub-card-desc">
+              Platform terms of engagement, legal network structure, attorney routing provisions, fee disclosures, and client responsibilities.
+            </p>
+            <div class="hub-card-footer">
+              <span>RD-TOS-2026</span>
+              <span>9 Clauses &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 3: 50-State Defense Network -->
+          <a href="https://routedefensegroup.com" class="hub-card" target="_blank" rel="noopener noreferrer">
+            <div class="hub-card-header">
+              <div class="hub-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <span class="hub-card-arrow">&rarr;</span>
+            </div>
+            <h2 class="hub-card-title">50-State Defense Network</h2>
+            <p class="hub-card-desc">
+              Vetted independent defense counsel coverage across 3,143 municipal courts, county benches, and state traffic tribunals nationwide.
+            </p>
+            <div class="hub-card-footer">
+              <span>Nationwide Defense</span>
+              <span>Live Coverage &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 4: Enterprise Fleet Compliance -->
+          <a href="https://routedefensegroup.com" class="hub-card" target="_blank" rel="noopener noreferrer">
+            <div class="hub-card-header">
+              <div class="hub-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <span class="hub-card-arrow">&rarr;</span>
+            </div>
+            <h2 class="hub-card-title">Fleet &amp; Carrier Support</h2>
+            <p class="hub-card-desc">
+              Dedicated legal intake, CSA score risk mitigation, and commercial driver citation management for freight fleets and dispatchers.
+            </p>
+            <div class="hub-card-footer">
+              <span>Commercial CDL</span>
+              <span>Direct Routing &rarr;</span>
+            </div>
+          </a>
+
+        </div>
+
+        <footer class="article-footer">
+          &copy; 2026 RouteDefense Group LLC. All rights reserved. Secure Legal Repository.
+        </footer>
+      </main>
+
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('mobileMenuToggle');
+    const drawer = document.getElementById('mobileDrawer');
+    if (menuBtn && drawer) {
+      menuBtn.addEventListener('click', () => {
+        drawer.classList.toggle('open');
+      });
+      drawer.addEventListener('click', (e) => {
+        if (e.target === drawer) drawer.classList.remove('open');
+      });
+    }
+  </script>
 
 </body>
 </html>
